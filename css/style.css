@@ -79,7 +79,6 @@ a:focus {
 /* -Resets- */
 html, body { 
     background-color: #111;
-    // todo: better background image and/or gradient
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../images/bg.png);
     background-repeat: repeat;
     color: #222;
