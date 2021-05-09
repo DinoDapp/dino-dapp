@@ -10,11 +10,6 @@ $(document).ready(function(){
             $(".navbar-light").removeClass("scrolled");
     });
     
-    //HAMBURGER MENU ANIMATION
-    	$('#hamburger').on("click", function(){
-            $(this).toggleClass('open');
-	   });
-    
     //PARTICLES
         particlesJS("particles-web", 
             {
@@ -184,14 +179,7 @@ $(document).ready(function(){
         'imageFadeDuration': 500,
         'wrapAround': true
     });
-    
-    // VIDEO LIGHTBOX
-    $(".js-video-button").modalVideo();
-    
-    //COPYRIGHT YEAR
-    var date = new Date().getFullYear();
-    document.getElementById("year").innerHTML = date;
-    
+
     // FORM SCRIPTS
     $("#contactForm").validator().on("submit", function(event) {
         if (event.isDefaultPrevented()) {
