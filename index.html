@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Geek Gang">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+    <title>Dino Dapp</title>
+    <!-- todo: better desc for Google -->
+    <meta name="description" content="A landing page">
+    <!-- todo: favicons of all sizes - dino egg -->
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/extra.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <h1 class="loader-logo">Dino<span class="colored">Dapp</span></h1>
+        <div id="progress"></div>
+        <h3 class="loader-text">LOADING</h3>
+    </div>
+    <header id="main-header">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <!-- todo: png logo? -->
+                <a id="logo" class="navbar-brand" href="#hero-section">Dino<span class="colored">Dapp</span></a>
+
+                <button id="hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro">Intro</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#game">Game</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#team">Team</a>
+                        </li>
+<!--                        &lt;!&ndash; todo: move to footer? &ndash;&gt;-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="#resource">Resources</a>-->
+<!--                        </li>-->
+<!--                        &lt;!&ndash; todo: move to footer? &ndash;&gt;-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="#contact">Contact</a>-->
+<!--                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="hero-section" class="small-margin">
+        <div id="particles-web"></div>
+        <div class="row hero-unit">
+            <div class="container">
+                <div class="hero-caption">
+                    <h1>
+                        <span class="hero-left">Prehistoric Game</span>
+                        <span class="hero-right colored">Futuristic Technology</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="intro" class="large-margin">
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">Introducing Dino<span class="colored">Dapp</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row">
+                <p class="small-margin">
+                    DinoDapp is the landing page for an independently developed blockchain game known as Cardino!
+                    Our goal is to bring education and entertainment together for the global audience that is becoming increasingly
+                    aware and even more curious about cryptocurrency, blockchains, smart contracts, non-fungible tokens (NFT),
+                    decentralized applications (DAPP), and much more!
+                    Whether you are a crypto newbie asking yourself <span class="colored">"What in the world did that last sentence even mean?"</span>
+                    or a blockchain veteran thinking we barely scratched the tip of the iceberg there is something here for you to explore with us!
+                </p>
+            </div>
+        </div>
+
+        <div id="game" class="large-margin">
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">Blockchain <span class="colored">Game</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11 small-margin">
+                   <p>There are many games out there but our blockchain game is different!
+                       Some games feature role-playing elements or collectible critters but the players lose everything when the developer stops supporting the game.
+                       Other games are educational but knowledge is the only takeaway after playing. With Cardino you get the best of both worlds.
+                       More importantly players own their game assets and achievements are preserved forever in the history of the blockchain.
+                       You can trade, sell, or do as you please with your characters and tokens. No matter what happens what you earn in game is always yours for keeps!
+                   </p>
+                </div>
+                <div class="col-md-12">
+                    <ul class="game-tags">
+                        <li>Choose Platform :</li>
+                        <li><a href="#" data-filter=".win">PC</a></li>
+                        <li><a href="#" data-filter=".osx">MAC</a></li>
+                        <li><a href="#" data-filter=".nix">LINUX</a></li>
+                        <li><a href="#" data-filter=".apk">ANDROID</a></li>
+                        <li><a href="#" data-filter=".ios">IOS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="games-portfolio ">
+                <div class="row game-card nix">
+                    <div class="col-lg-12 col-xl-5 game-card-left">
+                        <img src="images/placeholder.jpg" data-src="images/game.jpg" class="img-fluid b-lazy" alt="thumbnail">
+                    </div>
+                    <div class="col-lg-12 col-xl-7 game-card-right">
+                        <h2 class="short-hr-left game-title">CARDINO</h2>
+                        <p class="tags"><span class="subtle">NFT | Trading | RPG</span></p>
+                        <p class="game-description">Dinosaurs are born again!
+                            This time as NFT characters owned by you their trainer.
+                            Players who acquire a Cardino egg fungible token (FT) will be able to hatch a uniquely generated NFT!
+                            These NFT dinosaurs come in various types, rarities, and attributes for the current era.
+                            Each era will have a limited amount of eggs that spawn types of dinosaurs that will never be seen again.
+                            Your dinosaur can then be trained to become more powerful in various ways.
+                            <span class="expand colored strong" data-toggle="modal" data-target="#game1">Read More</span></p>
+                        <div class="steam-btn">
+                            <a href="#">
+                                <p><span class="spaced">DOWNLOAD</span></p>
+                            </a>
+                        </div>
+<!--                        <div class="reviews">-->
+<!--                            <a href="#"><div class="score-card">-->
+<!--                                <p class="score">8.0</p>-->
+<!--                                <p>Gamespot</p>-->
+<!--                            </div></a>-->
+<!--                            <a href="#"><div class="score-card">-->
+<!--                                <p class="score">7.9</p>-->
+<!--                                <p>IGN</p>-->
+<!--                            </div></a>-->
+<!--                            <a href="#"><div class="score-card">-->
+<!--                                <p class="score">86</p>-->
+<!--                                <p>Metacritic</p>-->
+<!--                            </div></a>-->
+<!--                        </div>-->
+                    </div>
+
+                    <div class="modal fade game-modal" id="game1" tabindex="-1" role="dialog" aria-labelledby="cardino" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title" id="cardino"><span class="game-title">CARDINO</span></h1>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                               <div class="modal-body">
+                                   <h2 class="short-hr-left">DUEL RIVAL DINOSAURS</h2>
+                                   <p>Every Dino hatches with random type, base stats, and rarity bonuses but are yours the strongest?
+                                       Find out by dueling Dino characters owned by other players and test your prowess in battle!
+                                       Dinos that are not in training may be attacked but not to worry they will gain experience win or lose.
+                                       Of course winners will earn many more rewards so if at first you don't succeed ... try, try again!
+                                   </p>
+                                   <img class="img-fluid" src="images/game_large.jpg" alt="screenshot">
+                                   <br>
+                                   <h2 class="short-hr-left">SPAR AGAINST ROBOTOSAUR</h2>
+                                   <p>Before you enter the colosseum and face player owned Dino opponents you should practice!
+                                       Robotosaur, an off-chain AI controlled Dino, will always be happy to teach you the ropes.
+                                       Completing all three rounds versus Robotosaur grants a very modest amount of experience.
+                                       Dinos above level 10 or those seeking greater rewards should consider other options!
+                                   </p>
+                                   <img class="img-fluid" src="images/game_large.jpg" alt="screenshot">
+                                   <br>
+                                   <h2 class="short-hr-left">TRAIN YOUR DINOS</h2>
+                                   <p>Sometimes when their trainer is not around Dinos get bored and lonely.
+                                       Send them to the gymnasium to train together when you are too busy to play.
+                                       Remember this is a no fighting zone so Dinos will be on their best behavior.
+                                       The more Dinos you have in training the more experience they will collectively gain!
+                                   </p>
+                                   <img class="img-fluid" src="images/game_large.jpg" alt="screenshot">
+                                   <br>
+                                   <h2 class="short-hr-left">DEVOUR BLOCKCHAIN KNOWLEDGE</h2>
+                                   <p>Attend the Dino Academy in game with courses that teach you about blockchain technology.
+                                       Courses range from novice to master and include quizzes, hands-on exercises, and more.
+                                       Successful completion with a passing grade grants experience to your Dino.
+                                       Straight A students are known to level up faster than any other Dino around!
+                                   </p>
+                                   <img class="img-fluid" src="images/game_large.jpg" alt="screenshot">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="button secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="team" class="large-margin">
+            <div class="row heading tiny-margin">
+                <div class="col-md-auto">
+                    <h1 class="animation-element slide-down">Meet the <span class="colored">Team</span></h1>
+                </div>
+                <div class="col">
+                    <hr class="animation-element extend">
+                </div>
+            </div>
+            <div class="row medium-margin">
+                <div class="col-md-11 tiny-margin">
+                    <p>Self funded, self motivated, and self taught.
+                        Maybe we just like doing things the hard way but we started this project to share what we discover.
+                        We believe this will be a much more fun and entertaining way to present endless hours of research.
+                    </p>
+                </div>
+                <div id="full-row" class="row text-center">
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/placeholder.jpg" data-src="images/team.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>"Code Monkey Extraordinaire"</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Adam Gauvin</p>
+                        <p class="subtle">Lead Architect</p>
+                    </div>
+                    <div class="col-md-3 team-card">
+                        <figure>
+                            <img src="images/placeholder.jpg" data-src="images/team.jpg" class="img-fluid b-lazy" alt="teammember">
+                            <figcaption class="team-caption">
+                                <p>"Meow"</p>
+                                <hr class="hr-short">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <p class="team-name">Gigi Suchan</p>
+                        <p class="subtle">Creative Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="main-footer">
+        <div id="footer"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="copyright">&copy; Geek Gang <span id="year">2021</span></p>
+                        <ul class="social-links">
+                            <li><a href="#"><i class="fa fa-facebook fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter  fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus fa-lg icon-social"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-pinterest fa-lg icon-social"></i></a>
+                            <li><a href="#"><i class="fa fa-instagram fa-lg icon-social"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blazy.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/strider.js"></script>
+</body>
+</html>
