@@ -165,132 +165,15 @@ $(document).ready(function(){
     $window.on('scroll resize', check_if_in_view);
     $window.trigger('scroll');
     
-    //STOP VIDEO FROM PLAYING AFTER CLOSING A MODAL
-    $("body").on('hidden.bs.modal', function (e) {
-        var $iframes = $(e.target).find("iframe");
-        $iframes.each(function(index, iframe){
-            $(iframe).attr("src", $(iframe).attr("src"));
-         });
-     });
-    
     // LIGHTBOX OPTIONS
      lightbox.option({
         'resizeDuration': 500,
         'imageFadeDuration': 500,
         'wrapAround': true
     });
-
-    // FORM SCRIPTS
-    $("#contactForm").validator().on("submit", function(event) {
-        if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formError();
-            submitMSG(false, "Did you fill in the form properly?");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
-        }
-    });
-
-    function submitForm() {
-        // Initiate Variables With Form Content
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var message = $("#message").val();
-
-
-        $.ajax({
-            type: "POST",
-            url: "php/form-process.php",
-            data: "name=" + name + "&email=" + email + "&message=" + message,
-            success: function(text) {
-                if (text === "success") {
-                    formSuccess();
-                } else {
-                    formError();
-                    submitMSG(false, text);
-                }
-            }
-        });
-    }
-
-    function formSuccess() {
-        $("#contactForm")[0].reset();
-        submitMSG(true, "Message Submitted!")
-    }
-
-    function formError() {
-        $("#contactForm").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass();
-        });
-    }
-
-    function submitMSG(valid, msg) {
-        if (valid) {
-            var msgClasses = "h3 text-center text-success";
-        } else {
-            var msgClasses = "h3 text-center text-danger";
-        }
-        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-    }
-    
-    // NEWSLETTER SIGNUP SCRIPTS
-    $("#newsletter").validator().on("submit", function(event) {
-        if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            signupError();
-            signupMSG(false, "Did you fill in the form properly?");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitSignup();
-        }
-    });
-
-    function submitSignup() {
-        // Initiate Variables With Form Content
-        var emailsign = $("#emailsign").val();
-
-
-        $.ajax({
-            type: "POST",
-            url: "php/newsletter-process.php",
-            data: "&emailsign=" + emailsign,
-            success: function(text) {
-                if (text === "success") {
-                    signupSuccess();
-                } else {
-                    signupError();
-                    signupMSG(false, text);
-                }
-            }
-        });
-    }
-
-    function signupSuccess() {
-        $("#newsletter")[0].reset();
-        signupMSG(true, "Awesome! Thank you for subscribing!")
-    }
-
-    function signupError() {
-        $("#newsletter").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass();
-        });
-    }
-
-    function signupMSG(valid, msg) {
-        if (valid) {
-            var msgClasses = "h3 text-center tada animated text-success";
-        } else {
-            var msgClasses = "h3 text-center text-danger";
-        }
-        $("#msgSignup").removeClass().addClass(msgClasses).text(msg);
-    }
-            
 });
+
 window.onload = function() {
-    //INITIALIZE ISOTIPE
     // cache container
     var $container = $('.games-portfolio');
     // initialize isotope
@@ -308,5 +191,4 @@ window.onload = function() {
     $('#progress').animate({ width:'100%'}, 300, function() {
         $('#loader-wrapper').addClass('loaded');
     });
-    
 }
