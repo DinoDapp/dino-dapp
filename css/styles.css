@@ -228,10 +228,7 @@ button {
 	display: block;
 	height: auto;
     width: auto;
-    margin-left: auto;
-    margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+    margin: 20px auto;
     padding: 5px 15px;
     outline: none;
 	transition: all 0.2s ease;
@@ -356,7 +353,7 @@ button {
     transform: rotate(45deg);
 }
 #hamburger.open .icon-bar:nth-child(2) {
-    width: 0%;
+    width: 0;
     opacity: 0;
 }
 #hamburger.open .icon-bar:nth-child(3) {
@@ -541,7 +538,7 @@ button {
 .button-store:visited {
     color: #FFF;
 }
-.button store:active {
+.button-store:active {
     color: #FFF;
 }
 .button-store {
@@ -685,7 +682,7 @@ button {
     padding-bottom: 0;
 }
 .gallery-item {
-    padding: 0 2.5px;
+    padding: 0 2.5em;
 }
 .grid-gallery .row {
     margin: 0 0 5px 0;
@@ -711,7 +708,7 @@ button {
     border-bottom: 1px solid #E84118;
 }
 .modal-body > ul > li > p {
-    padding: 0px 5px;
+    padding: 0 5px;
     display: inline;
 }
 .modal-body ul {
@@ -727,7 +724,7 @@ button {
     display: inline-block;
     width: 1em;
     margin-left: -10px;
-    font-family: fontawesome;
+    font-family: fontawesome, sans-serif;
 }
 .modal-body .skill-list {   
     margin: 10px 0;
