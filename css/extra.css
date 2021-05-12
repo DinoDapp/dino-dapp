@@ -7,7 +7,7 @@
 .hero-right {
     display: flex;
     justify-content: flex-end;
-    font-family: Anurati;
+    font-family: Anurati, sans-serif;
 }
 
 .simple-list {
