@@ -175,18 +175,18 @@ $(document).ready(function(){
 
 window.onload = function() {
     // cache container
-    var $container = $('.games-portfolio');
+    var $container = $('.faq-questions');
     // initialize isotope
     $container.isotope({
-    // options...
+      filter: '.no-data-filter-selected'
     });
     // filter items when filter link is clicked
-    $('.game-tags li a').on('click', function(){
+    $('.faq-tags li a').on('click', function(){
         var selector = $(this).attr('data-filter');
         $container.isotope({ filter: selector });
-        return false;
+        return false; // stop event
     });
-    
+
     // HIDE LOADING SCREEN WHEN PAGE IS LOADED
     $('#progress').animate({ width:'100%'}, 300, function() {
         $('#loader-wrapper').addClass('loaded');

@@ -399,32 +399,32 @@ button {
     margin: 0 0 0 20%;
 }
 /* --------------------------- /////////// VI. GAMES SECTION /////////// --------------------------- */
-.game-tags {
+.faq-tags {
     background: #FAFAFA;
     padding: 10px;
     border-left: 2px solid #E84118;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.11);
 }
-.game-tags li {
+.faq-tags li {
     display: inline;
     margin: 0 0 0 15px;
     font-family: Raleway, sans-serif;
     font-size:1.10rem; /* 20px */;
     font-weight: 500;
 }
-.game-tags li a {
+.faq-tags li a {
     color: #222;
     text-decoration: none;
 }
-.game-tags li a:hover {
+.faq-tags li a:hover {
     color: #E84118;
 }
-.game-tags li a:focus {
+.faq-tags li a:focus {
     color: #E84118;
 }
-.game-card {
+.card-lg {
     width: 100%;
-    margin: 0 0 3.5em 0;
+    margin: 0 0 3em 0;
     min-height: 270px;
     height: auto;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.11);
@@ -451,23 +451,23 @@ button {
 .overlay:hover {
     opacity: 1;
 }
-.game-card-left {
+.card-lg-left {
     padding: 0;
 }
-.game-card-left img {
+.card-lg-left img {
     height: 100%;
     width: 100%;
     min-height: 270px;
 }
-.game-card-right {
+.card-lg-right {
     background: #FAFAFA;
     padding: 20px 40px;
     margin: 0;
 }
-.game-card-right h2 {
+.card-lg-right h2 {
     margin-bottom: 0;
 }
-.game-card-right > .short-hr-left::after {
+.card-lg-right > .short-hr-left::after {
     margin: 5px 0;
 }
 .tags {
@@ -693,7 +693,7 @@ button {
     border: none;
 }
 /* --------------------------- /////////// VIII. CAREERS SECTION /////////// --------------------------- */
-.job-card {
+.card-md {
     text-align: center;
     background: #FAFAFA;
     border-left: 2px solid #E84118;
@@ -933,7 +933,7 @@ button {
         display: block;
         margin: 2em auto 0 auto;
     }
-    .game-card {
+    .card-lg {
         margin: 0 0 3em 0;
     }
     .steam-btn {
@@ -980,7 +980,7 @@ button {
     }
 }
 @media (max-width : 480px) {
-    .game-card-left img {
+    .card-lg-left img {
         min-height: 0;
     }
     .score-card {
