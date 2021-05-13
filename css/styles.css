@@ -1,55 +1,6 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-
-Author: AtypicalThemes
-Template: Strider - A Game Studio Template
-Version:	1.0
-
-This file contains the styling for the actual theme, this
-is the file you need to edit to change the look of the
-theme.
-
--------------------------------------------------------------------
-Table of contents
-
-    I.General
-    II.Page Prealoader
-    III.Header & Navigation
-    IV.Hero Section
-    V.About Section
-    VI.Games Section
-    VII.Team Section
-    VIII.Careers Section
-    IX.Contact Section
-    X.Footer
-    XI.404 Page
-    XII.Responsive Styles
-
--------------------------------------------------------------------
-[Color codes]
-
-Background:	#111; (black)
-Content:	#FFF; (white)
-Footer:		#070707; (black)
-
-a (standard):	#F5F5F5; (white)
-a (hover): #E84118; (orange)
-a (visited):	#E84118;
-a (active):	#E84118;
-
-[Colors]
-
-Primary Color: #E84118;
--------------------------------------------------------------------*/
-
-
-
-/* --------------------------- /////////// I. GENERAL /////////// --------------------------- */
-/* -Color- */
 .colored {
     color: #E84118;
 }
-/* -Link Styling- */
 a {
     color: #E84118;
     font-family: Raleway, sans-serif;
@@ -72,22 +23,18 @@ a:focus {
     text-decoration: none;
 }
 /* -Resets- */
-html, body { 
-    background-color: #111;
-    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../images/bg.png);
-    background-repeat: repeat;
+html, body {
+    background: #FAFAFA url(../images/bg.png) repeat;
     color: #222;
     font-size: 16px;
     line-height: 1.5rem; /* 24px */
     max-width: 100%;
 	overflow-x: hidden;
 }
-/* -Full width fluid container- */
 .full-width {
     padding-left: 0;
     padding-right: 0;
 }
-/* -Text Styling */
 h1,h2,h3,h4,h5,h6 {
 	font-family: Raleway, sans-serif;
 }
@@ -136,7 +83,6 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-/* -Margins and Floats- */
 .floated-left {
      float: left;
 }
@@ -161,7 +107,6 @@ ul {
 .large-margin {
 	margin-bottom: 12em; /* 192px */
 }
-/* -<hr>- */
 hr {
     width: 100%;
     height: 2px;
@@ -192,7 +137,6 @@ hr {
     width: 60px;
     margin: 13px auto 0 auto;
 }
-/* General input fields */
 input {
     height: 45px;
     padding-left: 10px;
@@ -214,7 +158,6 @@ textarea:focus {
     border: 1px solid #333;
     outline: none;
 }
-/* -General Button Styles */
 button {
     outline: none !important;
 }
@@ -238,8 +181,6 @@ button {
 	background: #333;
 	color: #FFF;
 }
-/* --------------------------- /////////// II. PAGE PRELOADER /////////// --------------------------- */
-/* -Loading Screen- */
 #loader-wrapper {
     background: #FFF;
     height: 100%;
@@ -268,8 +209,6 @@ button {
     position: relative;
     top: 48%;
 }
-
-/* -Loading Screen Animation- */
 .loaded {
     -moz-transform: translate3d(0px, -100%, 0px);
     -webkit-transform: translate3d(0px, -100%, 0px);
@@ -279,8 +218,6 @@ button {
     -webkit-transition: all 0.5s ease; 
     transition: all 0.5s ease;
 }
-
-/* --------------------------- /////////// III. HEADER & NAVIGATION /////////// --------------------------- */
 #logo {
     font-family: Anurati, sans-serif;
     font-size: 1.75rem; /* 28px */;
@@ -327,7 +264,6 @@ button {
     margin: 7px 0;
     transition: .3s ease-in-out;
 }
-/* - Mobile menu animation - */
 #hamburger .icon-bar:nth-child(1) {
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
@@ -362,14 +298,11 @@ button {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* --------------------------- /////////// IV. HERO SECTION /////////// --------------------------- */
-/* -Hero Image- */
 .hero-unit {
     background: none;
     min-height: 720px;
     height: 100vh;
 }
-/* -Particles- */
 #particles-web {
     position: absolute;
     top: 0;
@@ -377,7 +310,6 @@ button {
     height: 100%;
     width: 100%;
 }
-/* -Hero Image Caption- */
 .hero-caption {
     display: block;
     position: relative;
@@ -393,12 +325,9 @@ button {
     font-size: 3rem;
     font-family: Raleway, sans-serif;
 }
-
-/* --------------------------- /////////// V. ABOUT SECTION /////////// --------------------------- */
 #support-image {
     margin: 0 0 0 20%;
 }
-/* --------------------------- /////////// VI. GAMES SECTION /////////// --------------------------- */
 .faq-tags {
     background: #FAFAFA;
     padding: 10px;
@@ -477,7 +406,6 @@ button {
 .game-description {
     margin: 35px 0;
 }
-/* -- Modal -- */
 .expand {
     cursor: pointer;
 }
@@ -501,7 +429,6 @@ button {
     margin: 20px 0 60px 0;
     border: none;
 }
-/* -- Buttons -- */
 .steam-btn {
     display: inline-block;
     margin: 25px 0 0 0;
@@ -632,7 +559,6 @@ button {
 .rating p {
     font-size: 1.5rem;
 }
-/* --------------------------- /////////// VII. TEAM SECTION /////////// --------------------------- */
 #full-row {
     width: 100%;
 }
@@ -692,7 +618,6 @@ button {
     width: 100%;
     border: none;
 }
-/* --------------------------- /////////// VIII. CAREERS SECTION /////////// --------------------------- */
 .card-md {
     text-align: center;
     background: #FAFAFA;
@@ -764,7 +689,6 @@ button {
     color: #E84118;
     opacity: 1;
 }
-/* -- Newsletter -- */
 #newsletter input {
     width: 40%;
     height: 45px;
@@ -780,7 +704,6 @@ button {
     height: 43px;
     width: auto;
 }
-/* --------------------------- /////////// IX. CONTACT SECTION /////////// --------------------------- */
 #contactForm {
     background: #FAFAFA;
     padding: 5%;
@@ -812,7 +735,6 @@ button {
     padding: 15px 25px;
     font-size: 1.25rem;
 }
-/* - Warning and succes msg text- */
 .text-danger, .text-success {
     font-family: Open Sans, sans-serif;
     font-weight: bold;
@@ -839,7 +761,6 @@ button {
     height: 330px;
     opacity: 0.9;
 }
-/* --------------------------- /////////// X. FOOTER /////////// --------------------------- */
 #footer {
     width: 100%;
     min-height: 70px;
@@ -867,7 +788,6 @@ button {
 #copyright {
     float: left;
 }
-/* --------------------------- /////////// XI. 404 PAGE /////////// --------------------------- */
 #container-404 {
     position: absolute;
     top: 0;
@@ -887,7 +807,6 @@ button {
     text-decoration: none;
     color: #FFF;
 }
-/* --------------------------- /////////// XII. RESPONSIVE STYLES /////////// --------------------------- */
 @media (max-width : 991px) {
     .nav-item > a::first-letter {
     color: #E84118;

@@ -14,15 +14,20 @@
     font-family: Open Sans, sans-serif;
     font-size: 0.9375rem;
     padding: 0;
-    margin: 0;
+    margin-left: 0.5em;
 }
 
 .simple-list li {
-    list-style-type: square !important;
-    color: #E84118 !important;
+    list-style-type: square;
+    color: #E84118;
 }
 
-.simple-list li > span {
+.simple-list li span {
+    color: #000000;
+}
+
+.simple-list-header {
+    font-weight: bold;
     color: #000000;
 }
 
