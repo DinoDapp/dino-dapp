@@ -179,7 +179,7 @@ button {
 }
 .button:hover {
 	background: #333;
-	color: #FFF;
+	color: #222;
 }
 #loader-wrapper {
     background: #FFF;
@@ -672,12 +672,6 @@ button {
 }
 .modal-footer button {
     margin: 0;
-}
-.button.secondary {
-    background: #222;
-}
-.button.secondary:hover {
-    background: #FFF;
 }
 .close {
     color: #222;
