@@ -24,7 +24,7 @@ a:focus {
 }
 /* -Resets- */
 html, body {
-    background: #FAFAFA url(../images/bg.png) repeat;
+    background: #FAFAFA url(../images/bg.jpg) repeat;
     color: #222;
     font-size: 16px;
     line-height: 1.5rem; /* 24px */
@@ -179,7 +179,7 @@ button {
 }
 .button:hover {
 	background: #333;
-	color: #222;
+	color: #FFF;
 }
 #loader-wrapper {
     background: #FFF;
@@ -429,36 +429,31 @@ button {
     margin: 20px 0 60px 0;
     border: none;
 }
-.steam-btn {
+.download-btn {
+    text-align: center;
     display: inline-block;
-    margin: 25px 0 0 0;
+    z-index: 5;
 }
-.steam-btn a {
+.download-btn a {
     display: inline-block;
     min-height: 55px;
     min-width: 150px;
     height: auto;
     width: auto;
-    background: #111;
+    background: darkgreen;
     border-radius: 3px;
-    padding: 8px;
+    padding: 10px;
     border: none;
     color: #FFF;
     cursor: pointer;
     transition: 0.2s;
+    text-decoration: none;
 }
-.steam-btn:hover a {
+.download-btn:hover a {
     background: #EEE;
     color: #111;
 }
-.steam-btn:active {
-    color: #FFF;
-}
-.steam-btn i {
-    float: left;
-}
-.steam-btn p {
-    float: right;
+.download-btn p {
     line-height: 20px;
     font-weight: bold;
 }
@@ -755,6 +750,15 @@ button {
     height: 330px;
     opacity: 0.9;
 }
+/* todo: needs sticky */
+#header {
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    background: #FFF;
+    border-bottom: 2px solid #E84118;
+    padding: 20px 0 0 0;
+}
 #footer {
     width: 100%;
     min-height: 70px;
@@ -781,6 +785,9 @@ button {
 }
 #copyright {
     float: left;
+}
+#cardano {
+    float: right;
 }
 #container-404 {
     position: absolute;
@@ -822,6 +829,10 @@ button {
         float: none;
         margin-bottom: 5px;
     }
+    #cardano {
+        float: none;
+        margin: 0 0 5px 5px;
+    }
     #container-404 .row-fluid {
         margin-top: 40%;
     }
@@ -849,7 +860,7 @@ button {
     .card-lg {
         margin: 0 0 3em 0;
     }
-    .steam-btn {
+    .download-btn {
         display: block;
         text-align: center;
     }
