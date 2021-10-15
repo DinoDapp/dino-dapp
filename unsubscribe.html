@@ -37,8 +37,22 @@
     <div class="row-fluid">
         <div class="col-md-12 text-center text-404">
             <h1>Newsletter</h1>
-            <h3>Welcome</h3>
-            <p>Your email has been successfully confirmed and added to the newsletter list.</p>
+            <div id="mail" class="large-margin">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="short-hr-center">NEWSLETTER</h2>
+                        <p>You may subscribe again if you change your mind.</p>
+                        <form method="post" action="https://scripts.dreamhost.com/add_list.cgi" id="newsletter" data-toggle="validator">
+                            <input type="hidden" name="list" value="news">
+                            <input type="hidden" name="domain" value="dinodapp.com">
+                            <label for="emailsign">
+                                <input type="email" name="email" id="emailsign" placeholder="Your email address" required>
+                            </label>
+                            <button type="submit" name="unsub" id="form-signup" class="button">UNSUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <a href="index.html" class="button">Take Me Back</a>
         </div>
     </div>
