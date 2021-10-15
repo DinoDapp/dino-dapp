@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Geek Gang">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index,follow">
 
     <title>Dino Dapp | Home of CARDINO the Dinosaur Battling Blockchain Game</title>
     <meta name="description"
@@ -343,21 +344,22 @@
         </div>
     </div>
 
-<!--    <div id="mail" class="large-margin">-->
-<!--        <div class="row">-->
-<!--            <div class="col-md-12 text-center">-->
-<!--                <h2 class="short-hr-center">NEWSLETTER</h2>-->
-<!--                <p>Stay up to date by subscribing to our newsletter.</p>-->
-<!--                <form id="newsletter" data-toggle="validator" onsubmit="subscribe()">-->
-<!--                    <label for="emailsign">-->
-<!--                        <input type="email" id="emailsign" placeholder="Your email address">-->
-<!--                    </label>-->
-<!--                    <button type="submit" id="form-signup" class="button">SUBSCRIBE</button>-->
-<!--                    <div id="msgSignup" class="h3 text-center hidden"></div>-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div id="mail" class="large-margin">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="short-hr-center">NEWSLETTER</h2>
+                <p>Stay up to date by subscribing to our newsletter.</p>
+                <form method="post" action="https://scripts.dreamhost.com/add_list.cgi" id="newsletter" data-toggle="validator">
+                    <input type="hidden" name="list" value="news">
+                    <input type="hidden" name="domain" value="dinodapp.com">
+                    <label for="emailsign">
+                        <input type="email" name="email" id="emailsign" placeholder="Your email address" required>
+                    </label>
+                    <button type="submit" name="submit" id="form-signup" class="button">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="main-footer">
@@ -394,6 +396,5 @@
 <script src="js/lightbox.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/strider.js"></script>
-<script src="js/news.js"></script>
 </body>
 </html>
