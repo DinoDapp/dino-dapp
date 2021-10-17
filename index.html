@@ -235,7 +235,6 @@
                 <li><a href="#" data-filter=".when">When will the period end/begin?</a></li>
                 <li><a href="#" data-filter=".reqs">What are the system requirements?</a></li>
                 <li><a href="#" data-filter=".cost">How much does it cost?</a></li>
-                <li><a href="#" data-filter=".who">Who can play?</a></li>
             </ul>
         </div>
         <div class="faq-questions">
@@ -258,7 +257,7 @@
                     With a lot more hard work it will become available soon.
                     Once we launch the game, the latest release will be available from this website.
                     Your wallet public API will effectively be your login, no registration required.
-                    If you do not have an ADA wallet the game will show you how to get one!
+                    If you do not have a Cardano wallet the game will show you how to get one!
                 </p>
             </div>
             <div class="row card-lg nft">
@@ -331,16 +330,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="row card-lg who">
-                <h5 class="question colored">Who can play?</h5>
-                <p class="answer">
-                    The game is designed to be fun for all ages.
-                    Children under age 18 years old must be granted permission by their parent or legal guardian first!
-                    We believe our content is appropriate for everyone but this game has not been evaluated by the ESRB.
-                    Regardless of any rating or content a responsible adult must always make the decision of what they
-                    deem appropriate.
-                </p>
-            </div>
         </div>
     </div>
 
@@ -349,7 +338,8 @@
             <div class="col-md-12 text-center">
                 <h2 class="short-hr-center">NEWSLETTER</h2>
                 <p>Stay up to date by subscribing to our newsletter.</p>
-                <form method="post" action="https://scripts.dreamhost.com/add_list.cgi" id="newsletter" data-toggle="validator">
+                <form method="post" action="https://scripts.dreamhost.com/add_list.cgi" id="newsletter"
+                      data-toggle="validator">
                     <input type="hidden" name="list" value="news">
                     <input type="hidden" name="domain" value="dinodapp.com">
                     <label for="emailsign">
@@ -367,22 +357,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p id="copyright">&copy; Geek Gang 2021. All rights reserved.</p>
-                    <!-- todo: maybe later? -->
-                    <!--                        <ul class="social-links">-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-facebook"></i></a></li>-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-twitter"></i></a></li>-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-google-plus"></i></a></li>-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-linkedin"></i></a></li>-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-pinterest"></i></a></li>-->
-                    <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-instagram"></i></a></li>-->
-                    <!--                        </ul>-->
-                    <!-- todo: terms, privacy policy, cookies policy, etc -->
-                    <p id="cardano">
-                        <span>Powered by </span>
-                        <a href="https://cardano.org/" target="_blank"><img src="images/cardano.png" alt="cardano"></a>
-                    </p>
+                    <div class="container">
+                        <p id="copyright">&copy; Geek Gang 2021. All rights reserved.</p>
+                        <!-- todo: maybe later? -->
+                        <!--                        <ul class="social-links">-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-facebook"></i></a></li>-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-twitter"></i></a></li>-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-google-plus"></i></a></li>-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-linkedin"></i></a></li>-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-pinterest"></i></a></li>-->
+                        <!--                            <li><a href="#"><i class="fa fa-lg icon-social fa-instagram"></i></a></li>-->
+                        <!--                        </ul>-->
+                        <p id="cardano">
+                            <span>Powered by </span>
+                            <a href="https://cardano.org/" target="_blank"><img src="images/cardano.png" alt="cardano"></a>
+                        </p>
+                    </div>
                 </div>
+            </div>
+            <div class="policies">
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <!-- todo: additional after launch? -->
+<!--                <a href="disclaimer.html">Disclaimer</a>-->
             </div>
         </div>
     </div>

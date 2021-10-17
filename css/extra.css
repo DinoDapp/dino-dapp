@@ -69,3 +69,11 @@
     position: absolute;
     bottom: -50px;
 }
+
+.policies > a {
+    margin: 5px 15px 0 0;
+}
+
+h3 {
+    margin-top: 20px;
+}
