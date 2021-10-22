@@ -786,7 +786,7 @@ button {
 #copyright {
     float: left;
 }
-#cardano {
+#powered {
     float: right;
 }
 #container-404 {
@@ -829,7 +829,7 @@ button {
         float: none;
         margin-bottom: 5px;
     }
-    #cardano {
+    #powered {
         float: none;
         margin: 0 0 5px 5px;
     }
