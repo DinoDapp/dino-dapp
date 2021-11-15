@@ -385,8 +385,6 @@ button {
     padding: 0;
 }
 .card-lg-left img {
-    height: 100%;
-    width: 100%;
     min-height: 270px;
 }
 .card-lg-right {
@@ -750,7 +748,6 @@ button {
     height: 330px;
     opacity: 0.9;
 }
-/* todo: needs sticky */
 #header {
     width: 100%;
     min-height: 70px;
