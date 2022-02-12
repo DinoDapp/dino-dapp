@@ -1,4 +1,2 @@
 # DinoDapp
-DinoDapp is an edutainment game for learning Cardano!
-
-https://www.dinodapp.com
+[DinoDapp](https://www.dinodapp.com) is an edutainment game for learning Cardano!
