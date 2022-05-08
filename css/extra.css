@@ -1,3 +1,7 @@
+h3 {
+    margin-top: 20px;
+}
+
 .hero-left {
   display: flex;
   justify-content: flex-start;
@@ -58,6 +62,9 @@
     margin: 5px 15px 0 0;
 }
 
-h3 {
-    margin-top: 20px;
+/* there is no font awesome icon for Cardano yet */
+.fa-cardano {
+    width: 18px !important;
+    height: 18px !important;
+    border-bottom: none !important;
 }

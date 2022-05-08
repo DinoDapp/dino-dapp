@@ -565,6 +565,8 @@ button {
 #team figure img {
     border-radius: 3px;
     border-bottom: 2px solid #E84118;
+    width: 200px;
+    height: 200px;
 }
 .team-caption ul {
     margin-top: 10px;
