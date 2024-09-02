@@ -74,9 +74,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-<!--                    <li class="nav-item active">-->
-<!--                        <a class="nav-link" href="game/dino.html">PLAY NOW</a>-->
-<!--                    </li>-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="game/dino.html">PLAY NOW</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#intro">Intro</a>
                     </li>
@@ -156,11 +156,11 @@
                     Dinosaurs come in various types, colors, and attributes.
                     <span class="expand colored strong" data-toggle="modal"
                           data-target="#game-details">More ...</span></p>
-<!--                <div class="download-container">-->
-<!--                    <div class="download-btn">-->
-<!--                        <a href="game/dino.html"><p><span class="spaced">PLAY NOW</span></p></a>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <div class="download-container">
+                    <div class="download-btn">
+                        <a href="game/dino.html"><p><span class="spaced">PLAY NOW</span></p></a>
+                    </div>
+                </div>
             </div>
 
             <div class="modal fade game-modal" id="game-details" tabindex="-1" role="dialog" aria-labelledby="dino"
@@ -240,7 +240,6 @@
                             <hr class="hr-short">
                             <ul>
                                 <li><a href="https://github.com/AJG85" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-<!--                                todo: https://github.com/FortAwesome/Font-Awesome/issues/12020-->
                                 <li><a href="https://forum.cardano.org/u/dinodude" target="_blank"><img class="fa fa-cardano fa-lg" src="images/cardano_icon.png" alt="cardano"></a></li>
                             </ul>
                         </figcaption>
@@ -306,7 +305,7 @@
             <div class="row card-lg what">
                 <h5 class="question colored">How do I get dinosaurs?</h5>
                 <p class="answer">
-                    Dinosaurs can be created within the game and the introduction focuses on leading you to your first token.
+                    Dinosaurs can be created within the game and the tutorial focuses on leading you to your first token.
                     Smart contracts and transactions require some minimum amount of ADA to process on the blockchain.
                     The minted dinosaur token will be deposited in the wallet that initiates and signs the transaction.
                 </p>
@@ -335,10 +334,12 @@
             <div class="row card-lg reqs">
                 <h5 class="question colored">What are the system requirements?</h5>
                 <p class="answer">
-                    An HTML5 compatible browser is all that is needed.
-                    Approximately 10% of content can be accessed without a wallet or token.
-                    Cardano wallet and ADA will only be required to get a dinosaur token.
-                    Dapp wallets usually require Chromium based browsers like Chrome, Brave, etc.
+                    <ul class="simple-list">
+                        <li><span>An HTML5 compatible browser is all that is needed</span></li>
+                        <li><span>Approximately 10% of content can be accessed without a wallet or token</span></li>
+                        <li><span>Cardano wallet and ADA will only be required to get a dinosaur token</span></li>
+                        <li><span>Dapp wallets usually are extensions that require Chromium based browsers like Chrome, Brave, or Edge</span></li>
+                    </ul>
                 </p>
             </div>
             <div class="row card-lg cost">
@@ -352,7 +353,7 @@
                 <div class="col-md-10">
                     <ul class="simple-list">
                         <li><span>Creating dinosaur tokens from hatch dialog</span></li>
-                        <li><span>Burning dinosaur tokens from gym dialog</span></li>
+                        <li><span>Deleting dinosaur tokens from gym dialog</span></li>
                     </ul>
                 </div>
             </div>
@@ -375,10 +376,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="policies">
-                <a href="terms.html">Terms</a>
-                <a href="privacy.html">Privacy Policy</a>
             </div>
         </div>
     </div>
